@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>面嚮對象</title>
+    <link rel='stylesheet' href='./styles/style.css'>
+  </head>
+
+  <body>
+    <main>
+
+      <div class="tabsbox" id="tab">
+        <!-- tab 标签 -->
+        <nav class="fisrstnav">
+            <ul>
+                <!-- iconfont icon-guanbi 是删除图标 -->
+                <li class="liactive"><span>测试1</span><span class="iconfont icon-guanbi"></span></li>
+                <li id="cs"><span id="ces">测试2</span><span class="iconfont icon-guanbi"></span></li>
+                <li><span>测试3</span><span class="iconfont icon-guanbi"></span></li>
+            </ul>
+            <div class="tabadd">
+                <span>+</span>
+            </div>
+        </nav>
+
+        <!-- tab 内容 -->
+        <div class="tabscon">
+            <section class="conactive">测试1</section>
+            <section>测试2</section>
+            <section>测试3</section>
+        </div>
+    </div>
+    </main>
+
+    <script src="js/tab.js"></script>
+  </body>
+  <!-- <script>
+    sections = document.querySelectorAll('section');
+    console.log(document.getElementsByClassName('iconfont icon-guanbi')) //HTMLCollection(3) [span.iconfont.icon-guanbi, span.iconfont.icon-guanbi, span.iconfont.icon-guanbi]
+    console.log(document.getElementById("cs").parentNode) //<ul></ul>
+    console.log(document.getElementById('ces').innerHTML) //测试2
+    console.log(document.getElementById('ces').parentNode.innerHTML) //<span id="ces">测试2</span><span class="iconfont icon-guanbi"></span>
+    console.log(sections)</script> -->
+</html>
